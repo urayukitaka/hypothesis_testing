@@ -27,3 +27,11 @@ def prepare_savedir(ROOT:str, name:str)->str:
     os.makedirs(savedir, exist_ok=True)
 
     return savedir
+
+def getdate():
+    '''
+    Args
+        None
+    '''
+
+    return dt.now().strftime("%Y%m%d_%H%M")
